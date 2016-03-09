@@ -2,7 +2,10 @@ TEMPLATE = app
 
 QT += qml quick widgets
 
-SOURCES += src/main.cpp
+SOURCES += src/main.cpp \
+    src/controller/controller.cpp \
+    src/model/archilist.cpp \
+    src/model/archilistproxy.cpp
 
 RESOURCES += view/qml.qrc
 
@@ -11,4 +14,9 @@ QML_IMPORT_PATH =
 
 # Default rules for deployment.
 include(deployment.pri)
+
+HEADERS += \
+    src/controller/controller.h \
+    src/model/archilist.h \
+    src/model/archilistproxy.h
 
