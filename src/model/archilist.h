@@ -4,6 +4,7 @@
 #include <QAbstractListModel>
 #include <QJsonDocument>
 
+#include "src/io/savefilemanager.h"
 
 // Load 2 files :
 //  Database file (json)
@@ -21,7 +22,8 @@ public:
         ArchiNameRole = Qt::UserRole + 1,
         MonsterNameRole,
         CapturedRole,
-        StepRole
+        StepRole,
+        IDRole
     };
 
     // Create empty model (needed by qml)
@@ -34,7 +36,10 @@ public:
     QVariant data(const QModelIndex &index, int role) const;
 
 
+    void saveUserData();
     void toogleCapturedState(int id_archi);
+
+
 
 signals:
     void error(QString explanation);
@@ -45,18 +50,19 @@ protected:
 
 
 private:
-
     struct Archi {
+        int id;
         QString archi_name;
         QString monster_name;
         int step;
-        bool captured;
+        int nb_captured;
     };
 
     // Fill archi_database_ and archi_size_
     void loadArchiDatabase(const QString &archi_database_path);
-    // fill loaded jsonDoc with captured archi ID
-    void loadCapturedArchisID(const QString &captured_archi_path);
+
+    void addArchiToList(const QJsonObject& archi_object);
+    SaveFileManager file_manager_;
 
     QList<Archi> archi_list_;
 

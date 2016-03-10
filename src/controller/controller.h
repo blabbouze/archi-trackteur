@@ -11,16 +11,20 @@ class Controller : public QObject
     Q_OBJECT
 
     Q_PROPERTY(ArchiList* archiList READ archiList NOTIFY archiListChanged)
+
 public:
     explicit Controller(QObject *parent = 0);
     ArchiList* archiList();
 
+
 signals:
     void archiListChanged();
     void error(QString errorDesc);
+    void readyToExit();
 
 public slots:
     void toogleArchiCaptured(int id_archi);
+    void save();
 
 private:
     std::shared_ptr<ArchiListProxy> archi_list_proxy_;

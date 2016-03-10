@@ -23,3 +23,9 @@ void Controller::toogleArchiCaptured(int id_archi)
     archi_list_raw_->toogleCapturedState(id_archi);
 }
 
+void Controller::save()
+{
+    archi_list_raw_->saveUserData();
+    emit readyToExit();
+}
+
