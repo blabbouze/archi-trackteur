@@ -20,6 +20,7 @@ signals:
     void error(QString errorDesc);
 
 public slots:
+    void toogleArchiCaptured(int id_archi);
 
 private:
     std::shared_ptr<ArchiListProxy> archi_list_proxy_;

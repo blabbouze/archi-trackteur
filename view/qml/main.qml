@@ -23,8 +23,19 @@ ApplicationWindow {
    ListView {
        anchors.fill: parent
        model: controller.archiList
-       delegate: Text { text: archiName + "(" + monsterName + ")"}
-
+       delegate: Rectangle {
+           color: captured ? "blue" : "white"
+           border { color: "black" ; width:1}
+           width: 100 ; height: 25
+           Text {
+               text: archiName + "(" + monsterName + ")"
+               anchors.centerIn: parent
+           }
+           MouseArea {
+               anchors.fill:parent
+               onClicked: controller.toogleArchiCaptured(index)
+           }
+       }
    }
 }
 

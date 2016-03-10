@@ -20,7 +20,8 @@ public:
     enum ArchiListRoles {
         ArchiNameRole = Qt::UserRole + 1,
         MonsterNameRole,
-        CapturedRole
+        CapturedRole,
+        StepRole
     };
 
     // Create empty model (needed by qml)
@@ -33,6 +34,7 @@ public:
     QVariant data(const QModelIndex &index, int role) const;
 
 
+    void toogleCapturedState(int id_archi);
 
 signals:
     void error(QString explanation);
@@ -43,19 +45,20 @@ protected:
 
 
 private:
-    QJsonArray getArchiArray() const;
+
+    struct Archi {
+        QString archi_name;
+        QString monster_name;
+        int step;
+        bool captured;
+    };
+
     // Fill archi_database_ and archi_size_
     void loadArchiDatabase(const QString &archi_database_path);
-    // fill captured_archis_id_ if possible
+    // fill loaded jsonDoc with captured archi ID
     void loadCapturedArchisID(const QString &captured_archi_path);
-   // Fill archi_database_ with data contained in captured_archis_id_
-    void fillDatabaseWithCapturedArchis();
 
-
-    QJsonDocument archi_database_;
-    int archi_count_ = 0;
-
-    QList<int> captured_archis_id_;
+    QList<Archi> archi_list_;
 
 };
 

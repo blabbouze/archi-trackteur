@@ -5,7 +5,8 @@ QT += qml quick widgets
 SOURCES += src/main.cpp \
     src/controller/controller.cpp \
     src/model/archilist.cpp \
-    src/model/archilistproxy.cpp
+    src/model/archilistproxy.cpp \
+    src/io/savefilemanager.cpp
 
 RESOURCES += view/qml.qrc
 
@@ -18,5 +19,6 @@ include(deployment.pri)
 HEADERS += \
     src/controller/controller.h \
     src/model/archilist.h \
-    src/model/archilistproxy.h
+    src/model/archilistproxy.h \
+    src/io/savefilemanager.h
 

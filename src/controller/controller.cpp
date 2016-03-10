@@ -18,3 +18,8 @@ ArchiList *Controller::archiList()
     return archi_list_raw_.get();
 }
 
+void Controller::toogleArchiCaptured(int id_archi)
+{
+    archi_list_raw_->toogleCapturedState(id_archi);
+}
+
