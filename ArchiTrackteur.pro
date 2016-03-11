@@ -1,5 +1,7 @@
 TEMPLATE = app
 
+CONFIG += c++11
+
 QT += qml quick widgets
 
 SOURCES += src/main.cpp \
@@ -8,7 +10,8 @@ SOURCES += src/main.cpp \
     src/model/archilistproxy.cpp \
     src/io/savefilemanager.cpp
 
-RESOURCES += view/qml.qrc
+RESOURCES += view/qml.qrc \
+    data/archidata.json
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =

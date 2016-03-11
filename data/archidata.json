@@ -1,0 +1,1720 @@
+{
+"archis": [
+{
+"id": 0,
+"monsterName": "Arakne Malade",
+"archiName": "Arachitik la Souffreteuse",
+"step": 20
+},
+{
+"id": 1,
+"monsterName": "Arakne Agressive",
+"archiName": "Araknay la Galopante",
+"step": 20
+},
+{
+"id": 2,
+"monsterName": "Arakne",
+"archiName": "Arakule la Revancharde",
+"step": 20
+},
+{
+"id": 3,
+"monsterName": "Boufton Blanc",
+"archiName": "Boudalf le Blanc",
+"step": 20
+},
+{
+"id": 4,
+"monsterName": "Boufton Noir",
+"archiName": "Boulgourvil le Lointain",
+"step": 20
+},
+{
+"id": 5,
+"monsterName": "Champ Champ",
+"archiName": "Chamchie le Difficile",
+"step": 20
+},
+{
+"id": 6,
+"monsterName": "Crabe",
+"archiName": "Craraboss le Féérique",
+"step": 20
+},
+{
+"id": 7,
+"monsterName": "Larve Bleue",
+"archiName": "Larvonika l'Instrument",
+"step": 20
+},
+{
+"id": 8,
+"monsterName": "Moskito",
+"archiName": "Mosketère le Dévoué",
+"step": 20
+},
+{
+"id": 9,
+"monsterName": "Piou Rose",
+"archiName": "Pioufe la Maquillée",
+"step": 20
+},
+{
+"id": 10,
+"monsterName": "Piou Vert",
+"archiName": "Pioukas la Plante",
+"step": 20
+},
+{
+"id": 11,
+"monsterName": "Piou Jaune",
+"archiName": "Pioulbrineur le Mercenaire",
+"step": 20
+},
+{
+"id": 12,
+"monsterName": "Piou Rouge",
+"archiName": "Pioulette la Coquine",
+"step": 20
+},
+{
+"id": 13,
+"monsterName": "Piou Violet",
+"archiName": "Pioussokrim le Délétère",
+"step": 20
+},
+{
+"id": 14,
+"monsterName": "Piou Bleu",
+"archiName": "Pioustone le Problème",
+"step": 20
+},
+{
+"id": 15,
+"monsterName": "Pissenlit Diabolique",
+"archiName": "Pissdane l'Insipide",
+"step": 20
+},
+{
+"id": 16,
+"monsterName": "Souris Grise",
+"archiName": "Sourizoto le Collant",
+"step": 20
+},
+{
+"id": 17,
+"monsterName": "Tofu",
+"archiName": "Tofuldebeu l'Explosif",
+"step": 20
+},
+{
+"id": 18,
+"monsterName": "Tofu Maléfique",
+"archiName": "Tofumanchou l'Empereur",
+"step": 20
+},
+{
+"id": 19,
+"monsterName": "Tofu Malade",
+"archiName": "Tofurapin le Pétri",
+"step": 20
+},
+{
+"id": 20,
+"monsterName": "Bandit Manchot",
+"archiName": "Bandapar l'Exclu",
+"step": 21
+},
+{
+"id": 21,
+"monsterName": "Bandit du clan des Roublards",
+"archiName": "Bandson le Tonitruant",
+"step": 21
+},
+{
+"id": 22,
+"monsterName": "Boulanger Sombre",
+"archiName": "Boudur le Raide",
+"step": 21
+},
+{
+"id": 23,
+"monsterName": "Bouftou",
+"archiName": "Boufdégou le Refoulant",
+"step": 21
+},
+{
+"id": 24,
+"monsterName": "Gelée Bleue",
+"archiName": "Gelanal le Huileux",
+"step": 21
+},
+{
+"id": 25,
+"monsterName": "Gelée Menthe",
+"archiName": "Geloliaine l'Aérien",
+"step": 21
+},
+{
+"id": 26,
+"monsterName": "Gobelin",
+"archiName": "Gobstiniais le Têtu",
+"step": 21
+},
+{
+"id": 27,
+"monsterName": "Kolérat",
+"archiName": "Kolforthe l'Indécollable",
+"step": 21
+},
+{
+"id": 28,
+"monsterName": "Kwoan",
+"archiName": "Kwoanneur le Frimeur",
+"step": 21
+},
+{
+"id": 29,
+"monsterName": "Larve Verte",
+"archiName": "Larchimaide la Poussée",
+"step": 21
+},
+{
+"id": 30,
+"monsterName": "Larve Orange",
+"archiName": "Larvapstrè le Subjectif",
+"step": 21
+},
+{
+"id": 31,
+"monsterName": "NodKoko",
+"archiName": "NodKoku le Trahi",
+"step": 21
+},
+{
+"id": 32,
+"monsterName": "Rose Démoniaque",
+"archiName": "Roz la Magicienne",
+"step": 21
+},
+{
+"id": 33,
+"monsterName": "Serpentin",
+"archiName": "Serpistol l'Illustre",
+"step": 21
+},
+{
+"id": 34,
+"monsterName": "Tikokoko",
+"archiName": "Tikosto le Mousse",
+"step": 21
+},
+{
+"id": 35,
+"monsterName": "Black Tiwabbit",
+"archiName": "Tiwa'Missou le Gateux",
+"step": 21
+},
+{
+"id": 36,
+"monsterName": "Tiwabbit",
+"archiName": "Tiwalpé le Dévêtu",
+"step": 21
+},
+{
+"id": 37,
+"monsterName": "Tiwabbit Kiafin",
+"archiName": "Tiwoflan le Lâche",
+"step": 21
+},
+{
+"id": 38,
+"monsterName": "Tournesol Sauvage",
+"archiName": "Tour le Vice",
+"step": 21
+},
+{
+"id": 39,
+"monsterName": "Trukikol",
+"archiName": "Trukul le Lent",
+"step": 21
+},
+{
+"id": 40,
+"monsterName": "Biblop Griotte",
+"archiName": "Bi le Partageur",
+"step": 22
+},
+{
+"id": 41,
+"monsterName": "Biblop Coco",
+"archiName": "Bilvoezé le Bonimenteur",
+"step": 22
+},
+{
+"id": 42,
+"monsterName": "Biblop Indigo",
+"archiName": "Bistou le Quêteur",
+"step": 22
+},
+{
+"id": 43,
+"monsterName": "Biblop Reinette",
+"archiName": "Bistou le Rieur",
+"step": 22
+},
+{
+"id": 44,
+"monsterName": "Boo",
+"archiName": "Boostif l'Affamé",
+"step": 22
+},
+{
+"id": 45,
+"monsterName": "Chef de Guerre Bouftou",
+"archiName": "Bouflet le Puéril",
+"step": 22
+},
+{
+"id": 46,
+"monsterName": "Bulbambou",
+"archiName": "Bulleur le Dormeur",
+"step": 22
+},
+{
+"id": 47,
+"monsterName": "Champa Vert",
+"archiName": "Champayr le Disjoncté",
+"step": 22
+},
+{
+"id": 48,
+"monsterName": "Chevaucheur de Karne",
+"archiName": "Chevaustine le Reconstruit",
+"step": 22
+},
+{
+"id": 49,
+"monsterName": "Cochon de Lait",
+"archiName": "Chonstip la Passagère",
+"step": 22
+},
+{
+"id": 50,
+"monsterName": "Citwouille",
+"archiName": "Citassaté le Service",
+"step": 22
+},
+{
+"id": 51,
+"monsterName": "Croc Gland",
+"archiName": "Cromikay le Néophyte",
+"step": 22
+},
+{
+"id": 52,
+"monsterName": "Milirat d'Egoutant malade",
+"archiName": "Milipussien le Géant",
+"step": 22
+},
+{
+"id": 53,
+"monsterName": "Berger Porkass",
+"archiName": "Porfavor le Quémandeur",
+"step": 22
+},
+{
+"id": 54,
+"monsterName": "Prespic",
+"archiName": "Preskapwal le Tendancieux",
+"step": 22
+},
+{
+"id": 55,
+"monsterName": "Sanglier",
+"archiName": "Sangria le Fruité",
+"step": 22
+},
+{
+"id": 56,
+"monsterName": "Tortue Bleue",
+"archiName": "Tortenssia la Fleurie",
+"step": 22
+},
+{
+"id": 57,
+"monsterName": "Tortue Jaune",
+"archiName": "Torthur la Lutte",
+"step": 22
+},
+{
+"id": 58,
+"monsterName": "Vampire",
+"archiName": "Vampunor le Glacial",
+"step": 22
+},
+{
+"id": 59,
+"monsterName": "Wabbit",
+"archiName": "Wabbitud le Constant",
+"step": 22
+},
+{
+"id": 60,
+"monsterName": "Bambouto",
+"archiName": "Bambouské le Camouflé",
+"step": 23
+},
+{
+"id": 61,
+"monsterName": "Bwork Archer",
+"archiName": "Barchwork le Multicolore",
+"step": 23
+},
+{
+"id": 62,
+"monsterName": "Bulbiflore",
+"archiName": "Buldeflore le Pénétrant",
+"step": 23
+},
+{
+"id": 63,
+"monsterName": "Bwork Mage",
+"archiName": "Bwormage le Respectueux",
+"step": 23
+},
+{
+"id": 64,
+"monsterName": "Corbac",
+"archiName": "Corpat le Vampire",
+"step": 23
+},
+{
+"id": 65,
+"monsterName": "Croc Gland enragé",
+"archiName": "Crognan le Barbare",
+"step": 23
+},
+{
+"id": 66,
+"monsterName": "Fourbasse",
+"archiName": "Fourapin le Chaud",
+"step": 23
+},
+{
+"id": 67,
+"monsterName": "Maître Vampire",
+"archiName": "Maître Amboat le Moqueur",
+"step": 23
+},
+{
+"id": 68,
+"monsterName": "Milimulou",
+"archiName": "Milipatte la Griffe",
+"step": 23
+},
+{
+"id": 69,
+"monsterName": "Minoskito",
+"archiName": "Minoskour le Sauveur",
+"step": 23
+},
+{
+"id": 70,
+"monsterName": "Mineur Sombre",
+"archiName": "Minsinistre l'Elu",
+"step": 23
+},
+{
+"id": 71,
+"monsterName": "Noeul",
+"archiName": "Neufedur le Flottant",
+"step": 23
+},
+{
+"id": 72,
+"monsterName": "Pichon Vert",
+"archiName": "Pichakoté le Dégoutant",
+"step": 23
+},
+{
+"id": 73,
+"monsterName": "Pichon Bleu",
+"archiName": "Pichdourse le Puissant",
+"step": 23
+},
+{
+"id": 74,
+"monsterName": "Pichon Blanc",
+"archiName": "Pichduitre le Totem",
+"step": 23
+},
+{
+"id": 75,
+"monsterName": "Pichon Orange",
+"archiName": "Pichtoire l'Erudit",
+"step": 23
+},
+{
+"id": 76,
+"monsterName": "Rose Obscure",
+"archiName": "Rostensyl la Cuisinière",
+"step": 23
+},
+{
+"id": 77,
+"monsterName": "Tortue Verte",
+"archiName": "Tortilleur le Coulé",
+"step": 23
+},
+{
+"id": 78,
+"monsterName": "Tortue Rouge",
+"archiName": "Tortorak le Cornu",
+"step": 23
+},
+{
+"id": 79,
+"monsterName": "Black Wabbit",
+"archiName": "Wagnagnah le Sanglant",
+"step": 23
+},
+{
+"id": 80,
+"monsterName": "Abraknyde",
+"archiName": "Abrakroc l'édenté",
+"step": 24
+},
+{
+"id": 81,
+"monsterName": "Bwork",
+"archiName": "Bworkasse le Dégoutant",
+"step": 24
+},
+{
+"id": 82,
+"monsterName": "Chafer Invisible",
+"archiName": "Chafalfer l'Optimiste",
+"step": 24
+},
+{
+"id": 83,
+"monsterName": "Champa Rouge",
+"archiName": "Chamdblé le Cultivé",
+"step": 24
+},
+{
+"id": 84,
+"monsterName": "Champa Marron",
+"archiName": "Chamflay le Ballonné",
+"step": 24
+},
+{
+"id": 85,
+"monsterName": "Champa Bleu",
+"archiName": "Champayt l'Odorant",
+"step": 24
+},
+{
+"id": 86,
+"monsterName": "Craqueleur",
+"archiName": "Crakmitaine le Faucheur",
+"step": 24
+},
+{
+"id": 87,
+"monsterName": "Craqueboule",
+"archiName": "Craquetuss le Piquant",
+"step": 24
+},
+{
+"id": 88,
+"monsterName": "Dragodinde Amande Sauvage",
+"archiName": "Draglida la Disparue",
+"step": 24
+},
+{
+"id": 89,
+"monsterName": "Gargrouille",
+"archiName": "Garsim le Mort",
+"step": 24
+},
+{
+"id": 90,
+"monsterName": "Gelée Fraise",
+"archiName": "Gelaviv le Glaçon",
+"step": 24
+},
+{
+"id": 91,
+"monsterName": "Kitsou Nere",
+"archiName": "Kitsoupierre le Récipient",
+"step": 24
+},
+{
+"id": 92,
+"monsterName": "Kraméléhon",
+"archiName": "Krapahut le Randonneur",
+"step": 24
+},
+{
+"id": 93,
+"monsterName": "Mandrine",
+"archiName": "Mandalo l'Aqueuse",
+"step": 24
+},
+{
+"id": 94,
+"monsterName": "Rib",
+"archiName": "Ribibi le Cher",
+"step": 24
+},
+{
+"id": 95,
+"monsterName": "Scarafeuille Blanc",
+"archiName": "Scapé l'Epée",
+"step": 24
+},
+{
+"id": 96,
+"monsterName": "Scarafeuille Vert",
+"archiName": "Scaramel le Fondant",
+"step": 24
+},
+{
+"id": 97,
+"monsterName": "Scarafeuille Bleu",
+"archiName": "Scarfayss le Balafré",
+"step": 24
+},
+{
+"id": 98,
+"monsterName": "Scarafeuille Rouge",
+"archiName": "Scarouarze l'Epopée",
+"step": 24
+},
+{
+"id": 99,
+"monsterName": "Wabbit Squelette",
+"archiName": "Watdogue le Bien Nommé",
+"step": 24
+},
+{
+"id": 100,
+"monsterName": "Abrakne",
+"archiName": "Abrakadnuzar",
+"step": 25
+},
+{
+"id": 101,
+"monsterName": "Blop Reinette",
+"archiName": "Blof l'Apathique",
+"step": 25
+},
+{
+"id": 102,
+"monsterName": "Blop Indigo",
+"archiName": "Bloporte le Veule",
+"step": 25
+},
+{
+"id": 103,
+"monsterName": "Blop Griotte",
+"archiName": "Blordur l'Infect",
+"step": 25
+},
+{
+"id": 104,
+"monsterName": "Blop Coco",
+"archiName": "Blorie L'assourdissante",
+"step": 25
+},
+{
+"id": 105,
+"monsterName": "Boomba",
+"archiName": "Boombata le Garde",
+"step": 25
+},
+{
+"id": 106,
+"monsterName": "Bulbuisson",
+"archiName": "Bulsavon le Gonflé",
+"step": 25
+},
+{
+"id": 107,
+"monsterName": "Chafer",
+"archiName": "Chafemal le Bagarreur",
+"step": 25
+},
+{
+"id": 108,
+"monsterName": "Chafer Fantassin",
+"archiName": "Chaffoin le Sournois",
+"step": 25
+},
+{
+"id": 109,
+"monsterName": "Crocodaille",
+"archiName": "Crolnareff l'Exilé",
+"step": 25
+},
+{
+"id": 110,
+"monsterName": "Crustorail Morito",
+"archiName": "Cruskof le Rustre",
+"step": 25
+},
+{
+"id": 111,
+"monsterName": "Crustorail Malibout",
+"archiName": "Crustensyl le Pragmatique",
+"step": 25
+},
+{
+"id": 112,
+"monsterName": "Crustorail Kouraçao",
+"archiName": "Crustterus l'Organique",
+"step": 25
+},
+{
+"id": 113,
+"monsterName": "Dragodinde Rousse Sauvage",
+"archiName": "Dragnoute l'Irascible",
+"step": 25
+},
+{
+"id": 114,
+"monsterName": "Cochon de Farle",
+"archiName": "Farlon l'Enfant",
+"step": 25
+},
+{
+"id": 115,
+"monsterName": "Pichon Kloune",
+"archiName": "Picht le Brioché",
+"step": 25
+},
+{
+"id": 116,
+"monsterName": "Rat d'Egoutant malade",
+"archiName": "Radoutable le Craint",
+"step": 25
+},
+{
+"id": 117,
+"monsterName": "Scaratos",
+"archiName": "Scaratyn l'huitre",
+"step": 25
+},
+{
+"id": 118,
+"monsterName": "Scorbute",
+"archiName": "Scorpitène l'Enflammé",
+"step": 25
+},
+{
+"id": 119,
+"monsterName": "Tronknyde",
+"archiName": "Tronkoneuz la Tranchante",
+"step": 25
+},
+{
+"id": 120,
+"monsterName": "Dopeul Osamodas",
+"archiName": "Aboudbra le Porteur",
+"step": 26
+},
+{
+"id": 121,
+"monsterName": "Dopeul Feca",
+"archiName": "Ameur la Laide",
+"step": 26
+},
+{
+"id": 122,
+"monsterName": "Arakne Majeure",
+"archiName": "Arabord la Cruche",
+"step": 26
+},
+{
+"id": 123,
+"monsterName": "Araknawa",
+"archiName": "Arakozette l'Intrépide",
+"step": 26
+},
+{
+"id": 124,
+"monsterName": "Cavalier Porkass",
+"archiName": "Cavordemal le Sorcier",
+"step": 26
+},
+{
+"id": 125,
+"monsterName": "Chafer Archer",
+"archiName": "Chafmarcel le Fêtard",
+"step": 26
+},
+{
+"id": 126,
+"monsterName": "Chafer Lancier",
+"archiName": "Chalan le Commerçant",
+"step": 26
+},
+{
+"id": 127,
+"monsterName": "Dopeul Eniripsa",
+"archiName": "Codenlgaz le Problème",
+"step": 26
+},
+{
+"id": 128,
+"monsterName": "Crustorail Passaoh",
+"archiName": "Crusmeyer le Pervers",
+"step": 26
+},
+{
+"id": 129,
+"monsterName": "Forgeron Sombre",
+"archiName": "Forboyar l'Enigmatique",
+"step": 26
+},
+{
+"id": 130,
+"monsterName": "Dopeul Sadida",
+"archiName": "Ginsenk le Stimulant",
+"step": 26
+},
+{
+"id": 131,
+"monsterName": "Grand Pa Wabbit",
+"archiName": "Grandilok le Clameur",
+"step": 26
+},
+{
+"id": 132,
+"monsterName": "Dopeul Ecaflip",
+"archiName": "Kiroyal le Sirupeux",
+"step": 26
+},
+{
+"id": 133,
+"monsterName": "Kokoko",
+"archiName": "Koktèle le Secoué",
+"step": 26
+},
+{
+"id": 134,
+"monsterName": "Dopeul Cra",
+"archiName": "Let le Rond",
+"step": 26
+},
+{
+"id": 135,
+"monsterName": "Dopeul Xelor",
+"archiName": "Nelvin le Boulet",
+"step": 26
+},
+{
+"id": 136,
+"monsterName": "Dopeul Sram",
+"archiName": "Nipulnislip l'Exhibitionniste",
+"step": 26
+},
+{
+"id": 137,
+"monsterName": "Dopeul Enutrof",
+"archiName": "Osuxion le Vampirique",
+"step": 26
+},
+{
+"id": 138,
+"monsterName": "Dopeul Iop",
+"archiName": "Susbewl l'Hypocrite",
+"step": 26
+},
+{
+"id": 139,
+"monsterName": "Wo Wabbit",
+"archiName": "Wokènrôl le Danseur",
+"step": 26
+},
+{
+"id": 140,
+"monsterName": "Abraknyde Vénérable",
+"archiName": "Abrakildas le Vénérable",
+"step": 27
+},
+{
+"id": 141,
+"monsterName": "Chafer d'élite",
+"archiName": "Chafrit le Barbare",
+"step": 27
+},
+{
+"id": 142,
+"monsterName": "Chaman d'Egoutant",
+"archiName": "Chamitant le Dillettante",
+"step": 27
+},
+{
+"id": 143,
+"monsterName": "Craqueleur des plaines",
+"archiName": "Cramikaz le Suicidaire",
+"step": 27
+},
+{
+"id": 144,
+"monsterName": "Craqueboule Poli",
+"archiName": "Craquetou le Fissuré",
+"step": 27
+},
+{
+"id": 145,
+"monsterName": "DoK Alako",
+"archiName": "Doktopuss le Maléfique",
+"step": 27
+},
+{
+"id": 146,
+"monsterName": "Gamino",
+"archiName": "Germinol l'Indigent",
+"step": 27
+},
+{
+"id": 147,
+"monsterName": "Kanniboul Archer",
+"archiName": "Kannibal le Lecteur",
+"step": 27
+},
+{
+"id": 148,
+"monsterName": "Kanniboul Jav",
+"archiName": "Kapota la Fraise",
+"step": 27
+},
+{
+"id": 149,
+"monsterName": "Koalak Immature",
+"archiName": "Koalastrof la Naturelle",
+"step": 27
+},
+{
+"id": 150,
+"monsterName": "Maître Bolet",
+"archiName": "Maître Onom le Régulier",
+"step": 27
+},
+{
+"id": 151,
+"monsterName": "Le Ouassingue Entourbé",
+"archiName": "Ouashouash l'Exubérant",
+"step": 27
+},
+{
+"id": 152,
+"monsterName": "Le Ouassingue",
+"archiName": "Ouassébo l'Esthète",
+"step": 27
+},
+{
+"id": 153,
+"monsterName": "La Ouassingue",
+"archiName": "Ouature la Mobile",
+"step": 27
+},
+{
+"id": 154,
+"monsterName": "Palmifleur Morito",
+"archiName": "Palmiche le Serein",
+"step": 27
+},
+{
+"id": 155,
+"monsterName": "Palmifleur Passaoh",
+"archiName": "Palmiflette le Convivial",
+"step": 27
+},
+{
+"id": 156,
+"monsterName": "Palmifleur Malibout",
+"archiName": "Palmito le Menteur",
+"step": 27
+},
+{
+"id": 157,
+"monsterName": "Pandit",
+"archiName": "Pandimaensh l'Animateur",
+"step": 27
+},
+{
+"id": 158,
+"monsterName": "Pandikaze",
+"archiName": "Pandimy le Contagieux",
+"step": 27
+},
+{
+"id": 159,
+"monsterName": "Sanglier Des Plaines",
+"archiName": "Sampi l'Eternel",
+"step": 27
+},
+{
+"id": 160,
+"monsterName": "Corailleur",
+"archiName": "Corboyard l'Enigmatique",
+"step": 28
+},
+{
+"id": 161,
+"monsterName": "Dragoss Doré",
+"archiName": "Dragalgan l'Effervescent",
+"step": 28
+},
+{
+"id": 162,
+"monsterName": "Dragoss de Saphir",
+"archiName": "Dragioli le Succulent",
+"step": 28
+},
+{
+"id": 163,
+"monsterName": "DragOeuf Noir immature",
+"archiName": "Dragsta le Détendu",
+"step": 28
+},
+{
+"id": 164,
+"monsterName": "DragOeuf Blanc immature",
+"archiName": "Dragstik le Frustre",
+"step": 28
+},
+{
+"id": 165,
+"monsterName": "DragOeuf Doré immature",
+"archiName": "Dragstore le Généraliste",
+"step": 28
+},
+{
+"id": 166,
+"monsterName": "Dragoss Blanc",
+"archiName": "Dragtopaile l'Excavateur",
+"step": 28
+},
+{
+"id": 167,
+"monsterName": "DragOeuf de Saphir immature",
+"archiName": "Dragtula l'Ancien",
+"step": 28
+},
+{
+"id": 168,
+"monsterName": "Dragoss Noir",
+"archiName": "Dragybuss le Sucré",
+"step": 28
+},
+{
+"id": 169,
+"monsterName": "Kanniboul Sarbak",
+"archiName": "Kannémik le Maigre",
+"step": 28
+},
+{
+"id": 170,
+"monsterName": "Kanniboul Thierry",
+"archiName": "Kannisterik le Forcené",
+"step": 28
+},
+{
+"id": 171,
+"monsterName": "Kitsou Nae",
+"archiName": "Kitsoudbra le Malodorant",
+"step": 28
+},
+{
+"id": 172,
+"monsterName": "Léopardo",
+"archiName": "Léopolnor le Barde",
+"step": 28
+},
+{
+"id": 173,
+"monsterName": "Ouginak",
+"archiName": "Ougaould le Parasite",
+"step": 28
+},
+{
+"id": 174,
+"monsterName": "Palmifleur Kouraçao",
+"archiName": "Palmbytch la Bronzée",
+"step": 28
+},
+{
+"id": 175,
+"monsterName": "Pandalette Ivre",
+"archiName": "Pandanlagl la Saoule",
+"step": 28
+},
+{
+"id": 176,
+"monsterName": "Pandawa Ivre",
+"archiName": "Pandouille le Titubant",
+"step": 28
+},
+{
+"id": 177,
+"monsterName": "Rat d'Egoutant",
+"archiName": "Ratlbol l'Aigri",
+"step": 28
+},
+{
+"id": 178,
+"monsterName": "Raul Mops",
+"archiName": "Rauligo le Sale",
+"step": 28
+},
+{
+"id": 179,
+"monsterName": "Serpiplume",
+"archiName": "Serpistule le Purulent",
+"step": 28
+},
+{
+"id": 180,
+"monsterName": "Barbroussa",
+"archiName": "Barebourd le Comte",
+"step": 29
+},
+{
+"id": 181,
+"monsterName": "Canon Dorf",
+"archiName": "Caboume l'Artilleur",
+"step": 29
+},
+{
+"id": 182,
+"monsterName": "Chiendent",
+"archiName": "Chiendanlémin l'Illusionniste",
+"step": 29
+},
+{
+"id": 183,
+"monsterName": "Cooleuvre",
+"archiName": "Cooligane le Névrosé",
+"step": 29
+},
+{
+"id": 184,
+"monsterName": "DragOeuf Doré",
+"archiName": "Dragkouine la Déguisée",
+"step": 29
+},
+{
+"id": 185,
+"monsterName": "DragOeuf de Saphir",
+"archiName": "Dragmoclaiss le Fataliste",
+"step": 29
+},
+{
+"id": 186,
+"monsterName": "DragOeuf Noir",
+"archiName": "Dragnostik le Sceptique",
+"step": 29
+},
+{
+"id": 187,
+"monsterName": "DragOeuf Blanc",
+"archiName": "Dragstayr le Fonceur",
+"step": 29
+},
+{
+"id": 188,
+"monsterName": "Fantôme Ardent",
+"archiName": "Fandanleuil le Précis",
+"step": 29
+},
+{
+"id": 189,
+"monsterName": "Fantôme Apero",
+"archiName": "Fanlabiz le Véloce",
+"step": 29
+},
+{
+"id": 190,
+"monsterName": "Fantôme Arepo",
+"archiName": "Fantoch le Pantin",
+"step": 29
+},
+{
+"id": 191,
+"monsterName": "Fantôme Brave",
+"archiName": "Fantrask le Rêveur",
+"step": 29
+},
+{
+"id": 192,
+"monsterName": "Koalak Griotte",
+"archiName": "Koakofrui le Confit",
+"step": 29
+},
+{
+"id": 193,
+"monsterName": "Koalak Coco",
+"archiName": "Koamaembair le Coulant",
+"step": 29
+},
+{
+"id": 194,
+"monsterName": "Koalak Reinette",
+"archiName": "Koarmit la Batracienne",
+"step": 29
+},
+{
+"id": 195,
+"monsterName": "Koalak Indigo",
+"archiName": "Koaskette la Chapelière",
+"step": 29
+},
+{
+"id": 196,
+"monsterName": "Nakunbra",
+"archiName": "Nakuneuye le Borgne",
+"step": 29
+},
+{
+"id": 197,
+"monsterName": "Nerbe",
+"archiName": "Nerdeubeu le Flagellant",
+"step": 29
+},
+{
+"id": 198,
+"monsterName": "Rat d'Hyoactif",
+"archiName": "Ratéhaifaim le Professeur",
+"step": 29
+},
+{
+"id": 199,
+"monsterName": "Sparo",
+"archiName": "Sparoket le Lanceur",
+"step": 29
+},
+{
+"id": 200,
+"monsterName": "Craqueleur Poli",
+"archiName": "Crathdogue le Cruel",
+"step": 30
+},
+{
+"id": 201,
+"monsterName": "Chef Crocodaille",
+"archiName": "Crok le Beau",
+"step": 30
+},
+{
+"id": 202,
+"monsterName": "DragOeuf Doré éveillé",
+"archiName": "Dragma le Bouillant",
+"step": 30
+},
+{
+"id": 203,
+"monsterName": "DragOeuf Noir Eveillé",
+"archiName": "Dragoeth le Penseur",
+"step": 30
+},
+{
+"id": 204,
+"monsterName": "Dragueuse",
+"archiName": "Dragonienne l'Econome",
+"step": 30
+},
+{
+"id": 205,
+"monsterName": "DragOeuf Blanc éveillé",
+"archiName": "Dragoo le Cramoisi",
+"step": 30
+},
+{
+"id": 206,
+"monsterName": "DragOeuf de Saphir éveillé",
+"archiName": "Dragtonien le Malvoyant",
+"step": 30
+},
+{
+"id": 207,
+"monsterName": "Fantôme Tanuki Chan",
+"archiName": "Fanfancisco le Cosmopolite",
+"step": 30
+},
+{
+"id": 208,
+"monsterName": "Fantôme Tanuki Chan",
+"archiName": "Fanhnatur le Simple",
+"step": 30
+},
+{
+"id": 209,
+"monsterName": "Fantôme Tanuki Chan",
+"archiName": "Fanjipann le Sucré",
+"step": 30
+},
+{
+"id": 210,
+"monsterName": "Fantôme Tanuki Chan",
+"archiName": "Fanjo le Pilote",
+"step": 30
+},
+{
+"id": 211,
+"monsterName": "Fantôme Tanuki Chan",
+"archiName": "Fanlmyl l'Acuité",
+"step": 30
+},
+{
+"id": 212,
+"monsterName": "Guerrier Koalak",
+"archiName": "Guerrite le Veilleur",
+"step": 30
+},
+{
+"id": 213,
+"monsterName": "Kanigrou",
+"archiName": "Kanasukr le Mielleux",
+"step": 30
+},
+{
+"id": 214,
+"monsterName": "Kido",
+"archiName": "Kido l'Âtre",
+"step": 30
+},
+{
+"id": 215,
+"monsterName": "Kilibriss",
+"archiName": "Kilimanj'haro le Grimpeur",
+"step": 30
+},
+{
+"id": 216,
+"monsterName": "Mufafah",
+"archiName": "Mufguedin le Suprême",
+"step": 30
+},
+{
+"id": 217,
+"monsterName": "Mulou",
+"archiName": "Muloufok l'Hilarant",
+"step": 30
+},
+{
+"id": 218,
+"monsterName": "Pandule",
+"archiName": "Pangraive le Militant",
+"step": 30
+},
+{
+"id": 219,
+"monsterName": "Bitouf des Plaines",
+"archiName": "Toufou le Benêt",
+"step": 30
+},
+{
+"id": 220,
+"monsterName": "Abraknyde Sombre",
+"archiName": "Abrakanette l'Encapsulé",
+"step": 31
+},
+{
+"id": 221,
+"monsterName": "Abrakne Sombre",
+"archiName": "Abraklette le Fondant",
+"step": 31
+},
+{
+"id": 222,
+"monsterName": "Bambouto Sacré",
+"archiName": "Bambono le Divin",
+"step": 31
+},
+{
+"id": 223,
+"monsterName": "Bitouf Sombre",
+"archiName": "Bitoven le Musicien",
+"step": 31
+},
+{
+"id": 224,
+"monsterName": "Braconnier",
+"archiName": "Bramin le Bicéphale",
+"step": 31
+},
+{
+"id": 225,
+"monsterName": "Brouture",
+"archiName": "Brouste l'Humiliant",
+"step": 31
+},
+{
+"id": 226,
+"monsterName": "Bulbig",
+"archiName": "Bulgig le Danseur",
+"step": 31
+},
+{
+"id": 227,
+"monsterName": "Disciple Zoth",
+"archiName": "Diskord le Belliqueux",
+"step": 31
+},
+{
+"id": 228,
+"monsterName": "Dragoeuf Guerrier",
+"archiName": "Dragdikal le Décisif",
+"step": 31
+},
+{
+"id": 229,
+"monsterName": "Dragoeuf Volant",
+"archiName": "Dragobert le Monarque",
+"step": 31
+},
+{
+"id": 230,
+"monsterName": "Fossoyeur Koalak",
+"archiName": "Fossamoel le Juteux",
+"step": 31
+},
+{
+"id": 231,
+"monsterName": "Gloutovore",
+"archiName": "Gloubibou le Gars",
+"step": 31
+},
+{
+"id": 232,
+"monsterName": "Kitsou Nere",
+"archiName": "Kitsoupopulère le Généreux",
+"step": 31
+},
+{
+"id": 233,
+"monsterName": "Chevaucheur Koalak",
+"archiName": "Koamag'oel le Défiguré",
+"step": 31
+},
+{
+"id": 234,
+"monsterName": "Koalak Forestier",
+"archiName": "Koasossyal le Psychopathe",
+"step": 31
+},
+{
+"id": 235,
+"monsterName": "Meupette",
+"archiName": "Meuroup le Prêtre",
+"step": 31
+},
+{
+"id": 236,
+"monsterName": "Oni",
+"archiName": "Onihylis le Destructeur",
+"step": 31
+},
+{
+"id": 237,
+"monsterName": "Pékeualak",
+"archiName": "Pékeutar le Tireur",
+"step": 31
+},
+{
+"id": 238,
+"monsterName": "Piralak",
+"archiName": "Piradain le Pingre",
+"step": 31
+},
+{
+"id": 239,
+"monsterName": "Warko Marron",
+"archiName": "Warkolad l'Etreinte",
+"step": 31
+},
+{
+"id": 240,
+"monsterName": "Abrakleur Sombre",
+"archiName": "Abrakine le Sombre",
+"step": 32
+},
+{
+"id": 241,
+"monsterName": "Bourbassingue",
+"archiName": "Bouliver le Géant",
+"step": 32
+},
+{
+"id": 242,
+"monsterName": "Dragoss de Saphir Eveillé",
+"archiName": "Drageaufol la Joyeuse",
+"step": 32
+},
+{
+"id": 243,
+"monsterName": "Dragoss Blanc Eveillé",
+"archiName": "Dragminster le Magicien",
+"step": 32
+},
+{
+"id": 244,
+"monsterName": "Dragoss Doré Eveillé",
+"archiName": "Dragtarus le Bellâtre",
+"step": 32
+},
+{
+"id": 245,
+"monsterName": "Drakoalak",
+"archiName": "Drakolage le Tentateur",
+"step": 32
+},
+{
+"id": 246,
+"monsterName": "Dragoss Noir Eveillé",
+"archiName": "Draquetteur le Voleur",
+"step": 32
+},
+{
+"id": 247,
+"monsterName": "Fécorce",
+"archiName": "Ecorfé la Vive",
+"step": 32
+},
+{
+"id": 248,
+"monsterName": "Floribonde",
+"archiName": "Floanna la Blonde",
+"step": 32
+},
+{
+"id": 249,
+"monsterName": "Gamine Zoth",
+"archiName": "Gastroth la Contagieuse",
+"step": 32
+},
+{
+"id": 250,
+"monsterName": "Guerrier Zoth",
+"archiName": "Guerumoth le Collant",
+"step": 32
+},
+{
+"id": 251,
+"monsterName": "Kitsou Nufeu",
+"archiName": "Kitsoufre l'Explosif",
+"step": 32
+},
+{
+"id": 252,
+"monsterName": "Koalak Farouche",
+"archiName": "Koalaboi le Calorifère",
+"step": 32
+},
+{
+"id": 253,
+"monsterName": "Koalak Sanguin",
+"archiName": "Koalvissie le Chauve",
+"step": 32
+},
+{
+"id": 254,
+"monsterName": "Maho Firefoux",
+"archiName": "Mahoku le Botté",
+"step": 32
+},
+{
+"id": 255,
+"monsterName": "Mama Koalak",
+"archiName": "Mamakomou l'Âge",
+"step": 32
+},
+{
+"id": 256,
+"monsterName": "Momie Koalak",
+"archiName": "Momikonos la Bandelette",
+"step": 32
+},
+{
+"id": 257,
+"monsterName": "Soryo Firefoux",
+"archiName": "Soryonara le Poli",
+"step": 32
+},
+{
+"id": 258,
+"monsterName": "Tourbassingue",
+"archiName": "Tourbiket le Virevoletant",
+"step": 32
+},
+{
+"id": 259,
+"monsterName": "Warko Violet",
+"archiName": "Wara l'Amer",
+"step": 32
+},
+{
+"id": 260,
+"monsterName": "Abrakleur Clair",
+"archiName": "Abrinos le Clair",
+"step": 33
+},
+{
+"id": 261,
+"monsterName": "Champaknyde",
+"archiName": "Chamilero le Malchanceux",
+"step": 33
+},
+{
+"id": 262,
+"monsterName": "Champodonte",
+"archiName": "Chamoute le Duveteux",
+"step": 33
+},
+{
+"id": 263,
+"monsterName": "Champmane",
+"archiName": "Champmé le Méchant",
+"step": 33
+},
+{
+"id": 264,
+"monsterName": "Champ à Gnons",
+"archiName": "Champolyon le Polyglotte",
+"step": 33
+},
+{
+"id": 265,
+"monsterName": "Champbis",
+"archiName": "Champoul l'Illuminé",
+"step": 33
+},
+{
+"id": 266,
+"monsterName": "Maître Zoth",
+"archiName": "Don Kizoth l'Obstiné",
+"step": 33
+},
+{
+"id": 267,
+"monsterName": "Fantôme Pandule",
+"archiName": "Fandouich l'Hautain",
+"step": 33
+},
+{
+"id": 268,
+"monsterName": "Fantôme Soryo Firefoux",
+"archiName": "Fanhopruno le Gourmet",
+"step": 33
+},
+{
+"id": 269,
+"monsterName": "Fantôme Léopardo",
+"archiName": "Fansissla l'Âne",
+"step": 33
+},
+{
+"id": 270,
+"monsterName": "Fantôme Pandikaze",
+"archiName": "Fanstatik l'Etonnant",
+"step": 33
+},
+{
+"id": 271,
+"monsterName": "Fauchalak",
+"archiName": "Faufoll la Joyeuse",
+"step": 33
+},
+{
+"id": 272,
+"monsterName": "Kaskargo",
+"archiName": "Kaskapointhe la Couverte",
+"step": 33
+},
+{
+"id": 273,
+"monsterName": "Maître Koalak",
+"archiName": "Maître Koantik le Théoricien",
+"step": 33
+},
+{
+"id": 274,
+"monsterName": "Poolay",
+"archiName": "Poolopo la Traditionnelle",
+"step": 33
+},
+{
+"id": 275,
+"monsterName": "Sergent Zoth",
+"archiName": "Seripoth l'Ennemi",
+"step": 33
+},
+{
+"id": 276,
+"monsterName": "Bitouf Aérien",
+"archiName": "Toutouf le Velu",
+"step": 33
+},
+{
+"id": 277,
+"monsterName": "Tromperelle",
+"archiName": "Tromplamor le Survivant",
+"step": 33
+},
+{
+"id": 278,
+"monsterName": "Trooll",
+"archiName": "Trooyé l'Oxydé",
+"step": 33
+},
+{
+"id": 279,
+"monsterName": "Yokai Firefoux",
+"archiName": "YokaiKoral le Duel",
+"step": 33
+},
+{
+"id": 280,
+"monsterName": "Fantôme Tanukouï San",
+"archiName": "Fanburn le Viril",
+"step": 34
+},
+{
+"id": 281,
+"monsterName": "Fantôme Maho Firefoux",
+"archiName": "Fanlagoel le Comique",
+"step": 34
+},
+{
+"id": 282,
+"monsterName": "Fantôme Pandore",
+"archiName": "Fansiss la Brêle",
+"step": 34
+},
+{
+"id": 283,
+"monsterName": "Fantôme Yokai Firefoux",
+"archiName": "Fantassein le Soldat",
+"step": 34
+},
+{
+"id": 284,
+"monsterName": "Pandore",
+"archiName": "Pandive le Végétarien",
+"step": 34
+},
+{
+"id": 285,
+"monsterName": "Roissingue",
+"archiName": "Roy le Merlin",
+"step": 34
+}
+]
+}
