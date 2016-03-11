@@ -18,10 +18,6 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
-
-    Controller c;
-    engine.rootContext()->setContextProperty("Controller",&c);
-
     return app.exec();
 }
 

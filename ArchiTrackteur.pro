@@ -10,8 +10,9 @@ SOURCES += src/main.cpp \
     src/model/archilistproxy.cpp \
     src/io/savefilemanager.cpp
 
-RESOURCES += view/qml.qrc \
-    data/archidata.json
+RESOURCES += view/qml.qrc
+
+OTHER_FILES += data/archidata.json
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =

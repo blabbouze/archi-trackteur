@@ -6,16 +6,20 @@ Controller::Controller(QObject *parent) : QObject(parent)
     archi_list_raw_ = std::make_shared<ArchiList>(
                 "archidata.json","mesArchis.dat");
 
+    archi_list_proxy_ = std::make_shared<ArchiListProxy>();
+    archi_list_proxy_->setSourceModel(archi_list_raw_.get());
+
+    emit archiListChanged();
     connect(archi_list_raw_.get(),SIGNAL(error(QString)),
             this,SIGNAL(error(QString)));
 }
 
-ArchiList *Controller::archiList()
+ArchiListProxy *Controller::archiList()
 {
-    QQmlEngine::setObjectOwnership(archi_list_raw_.get(),
+    QQmlEngine::setObjectOwnership(archi_list_proxy_.get(),
                                    QQmlEngine::CppOwnership);
 
-    return archi_list_raw_.get();
+    return archi_list_proxy_.get();
 }
 
 void Controller::toogleArchiCaptured(int id_archi)
@@ -27,5 +31,10 @@ void Controller::save()
 {
     archi_list_raw_->saveUserData();
     emit readyToExit();
+}
+
+void Controller::searchArchi(const QString &name)
+{
+    archi_list_proxy_->searchArchiByName(name);
 }
 
