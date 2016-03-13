@@ -5,6 +5,8 @@
 #include <QJsonDocument>
 
 #include "src/io/savefilemanager.h"
+#include "archistats.h"
+#include <memory>
 
 // Load 2 files :
 //  Database file (json)
@@ -16,7 +18,7 @@ class ArchiList : public QAbstractListModel
 {
     Q_OBJECT
 
-
+    Q_PROPERTY(ArchiStats* archiStats READ archiStats NOTIFY archiStatsChanged)
 public:
     enum ArchiListRoles {
         ArchiNameRole = Qt::UserRole + 1,
@@ -36,6 +38,9 @@ public:
     QVariant data(const QModelIndex &index, int role) const;
 
 
+    ArchiStats* archiStats() const;
+
+
     void saveUserData();
     void toogleCapturedState(int id_archi);
 
@@ -43,6 +48,7 @@ public:
 
 signals:
     void error(QString explanation);
+    void archiStatsChanged();
 
 protected:
     // Do the bridge with qml
@@ -62,9 +68,14 @@ private:
     void loadArchiDatabase(const QString &archi_database_path);
 
     void addArchiToList(const QJsonObject& archi_object);
-    SaveFileManager file_manager_;
 
+    void computeStats(const Archi &archi_cpp);
+
+
+    SaveFileManager file_manager_;
     QList<Archi> archi_list_;
+    std::shared_ptr<ArchiStats> stat_manager_;
+
 
 };
 

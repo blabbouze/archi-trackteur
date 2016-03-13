@@ -35,10 +35,27 @@ Item {
 
         section.property:  "step"
         section.delegate: Rectangle {
+            property int captured: 0
+            property int total: 0
+            Connections {
+                target: controller.archiListRaw.archiStats
+                onArchiCountInStepChanged: {
+                    console.debug("pd")
+                    if (step == section) {
+                        total = archi_count;
+                    }
+                }
+                onArchiCapturedInStepChanged: {
+                    if (step == section) {
+                        captured = archi_captured_count;
+                    }
+                }
+            }
+
             color: "red"
             width: parent.width ; height: 30
             Text {
-                text: "Etape " + section
+                text: "Etape " + section + "(" + captured +  "/" + total + ")"
             }
         }
     }

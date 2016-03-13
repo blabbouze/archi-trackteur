@@ -8,7 +8,8 @@ SOURCES += src/main.cpp \
     src/controller/controller.cpp \
     src/model/archilist.cpp \
     src/model/archilistproxy.cpp \
-    src/io/savefilemanager.cpp
+    src/io/savefilemanager.cpp \
+    src/model/archistats.cpp
 
 RESOURCES += view/qml.qrc
 
@@ -24,5 +25,6 @@ HEADERS += \
     src/controller/controller.h \
     src/model/archilist.h \
     src/model/archilistproxy.h \
-    src/io/savefilemanager.h
+    src/io/savefilemanager.h \
+    src/model/archistats.h
 

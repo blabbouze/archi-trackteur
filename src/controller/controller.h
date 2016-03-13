@@ -11,14 +11,15 @@ class Controller : public QObject
     Q_OBJECT
 
     Q_PROPERTY(ArchiListProxy* archiList READ archiList NOTIFY archiListChanged)
-
+    Q_PROPERTY(ArchiList* archiListRaw READ archiListRaw NOTIFY archiListRawChanged)
 public:
     explicit Controller(QObject *parent = 0);
     ArchiListProxy* archiList();
-
+    ArchiList* archiListRaw();
 
 signals:
     void archiListChanged();
+    void archiListRawChanged();
     void error(QString errorDesc);
     void readyToExit();
 

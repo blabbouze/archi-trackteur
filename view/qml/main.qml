@@ -30,8 +30,23 @@ ApplicationWindow {
    }
 
 
+   Rectangle {
+    id: menuStats
+       width: 100;
+       anchors { top: parent.top; bottom:parent.bottom}
+       color: "black"
+       Text {
+           anchors.centerIn: parent
+           color: "white"
+           text: controller.archiListRaw.archiStats.archiCaptured
+       }
+   }
+
   ArchiListView {
-       anchors.fill: parent
+       anchors {
+           top: parent.top; right: parent.right; bottom:parent.bottom
+           left: menuStats.right
+       }
        modelArchi: controller.archiList
    }
 

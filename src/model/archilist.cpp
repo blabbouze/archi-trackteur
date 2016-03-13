@@ -22,11 +22,15 @@ ArchiList::ArchiList()
 ArchiList::ArchiList(const QString &archi_database_path,
                      const QString &captured_archi_path)
 {
+    stat_manager_ = std::make_shared<ArchiStats>();
+
     // Load user preferences
     file_manager_.setDefaultPath(captured_archi_path);
     file_manager_.loadFile();
 
     loadArchiDatabase(archi_database_path);
+
+    emit archiStatsChanged();
 }
 
 int ArchiList::rowCount(const QModelIndex &/*parent*/) const
@@ -56,6 +60,11 @@ QVariant ArchiList::data(const QModelIndex &index, int role) const
     return QVariant();
 }
 
+ArchiStats *ArchiList::archiStats() const
+{
+    return stat_manager_.get();
+}
+
 void ArchiList::saveUserData()
 {
     file_manager_.archi_indexes.clear();
@@ -73,6 +82,16 @@ void ArchiList::toogleCapturedState(int index)
 {
    archi_list_[index].nb_captured = (archi_list_[index].nb_captured +1)%2;
 
+   auto archi_cpp = archi_list_[index];
+   int modify_by = 1;
+   if (archi_cpp.nb_captured  == 0) {
+       modify_by = -1;
+   }
+
+   stat_manager_->modifyArchiCaptured(modify_by);
+   stat_manager_->modifyMonsterCapturedInStep(archi_cpp.step,modify_by);
+
+
    emit dataChanged(this->index(index), this->index(index),
            QVector<int>{CapturedRole});
 }
@@ -88,6 +107,18 @@ QHash<int, QByteArray> ArchiList::roleNames() const
 }
 
 
+void ArchiList::computeStats(const Archi& archi_cpp)
+{
+    // Fill info if this archi is captured
+    if (archi_cpp.nb_captured == 1) {
+        stat_manager_->modifyArchiCaptured(1);
+        // Increment the step count for this archi
+        stat_manager_->modifyMonsterCapturedInStep(archi_cpp.step,1);
+    }
+    // Total step count
+    stat_manager_->increaseTotalArchiCountInStep(archi_cpp.step);
+}
+
 void ArchiList::addArchiToList(const QJsonObject &archi_object)
 {
     Archi archi_cpp;
@@ -99,6 +130,9 @@ void ArchiList::addArchiToList(const QJsonObject &archi_object)
 
 
     archi_cpp.nb_captured = file_manager_.archi_indexes.value(archi_cpp.id);
+
+
+    computeStats(archi_cpp);
 
     archi_list_.append(archi_cpp);
 }
@@ -124,6 +158,7 @@ void ArchiList::loadArchiDatabase(const QString &archi_database_path)
             addArchiToList(archi_object);
         }
 
+        stat_manager_->forceRefreshStepCount();
     } else {
         emit error("Couldn't open " + archi_database_path);
     }
