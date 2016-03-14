@@ -35,24 +35,21 @@ Item {
 
         section.property:  "step"
         section.delegate: Rectangle {
-            property int captured: 0
-            property int total: 0
-            Connections {
-                target: controller.archiListRaw.archiStats
-                onArchiCountInStepChanged: {
-                    console.debug("pd")
-                    if (step == section) {
-                        total = archi_count;
-                    }
-                }
-                onArchiCapturedInStepChanged: {
-                    if (step == section) {
-                        captured = archi_captured_count;
-                    }
-                }
+            id: sectionRoot
+            // This var are refreshed when the model emits that StepRole have changed
+            property int captured: controller.archiListRaw.archiStats.getArchiCapturedInStep(section)
+            property int total: controller.archiListRaw.archiStats.getTotalArchiCountInStep(section)
+
+
+            Rectangle {
+                id: progress
+                anchors { top: parent.top ; left: parent.left}
+                height: parent.height
+                width : parent.width * sectionRoot.captured/sectionRoot.total
+                color: "red"
             }
 
-            color: "red"
+            color: "gray"
             width: parent.width ; height: 30
             Text {
                 text: "Etape " + section + "(" + captured +  "/" + total + ")"

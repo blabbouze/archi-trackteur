@@ -19,16 +19,13 @@ public:
     void modifyArchiCaptured(int modif_value);
 
     int getArchiCapturedCount();
-    int getTotalArchiCountInStep(int step);
-    int getArchiCapturedInStep(int step);
 
-    // Workaround for refresh archi count by step with QML
-    void forceRefreshStepCount();
+public slots:
+     int getTotalArchiCountInStep(int step);
+     int getArchiCapturedInStep(int step);
+
 signals:
     void archiCapturedCountChanged();
-
-    void archiCountInStepChanged(int step, int archi_count);
-    void archiCapturedInStepChanged(int step, int archi_captured_count);
 
  private:
     void registerStep(int step);

@@ -20,7 +20,6 @@ void ArchiStats::increaseTotalArchiCountInStep(int step)
 
     step_stats_[step].second += 1;
 
-    emit archiCountInStepChanged(step, step_stats_[step].second);
 }
 
 void ArchiStats::modifyMonsterCapturedInStep(int step, int modif_value)
@@ -28,8 +27,6 @@ void ArchiStats::modifyMonsterCapturedInStep(int step, int modif_value)
     registerStep(step);
 
     step_stats_[step].first += modif_value;
-
-    emit archiCapturedInStepChanged(step, step_stats_[step].first);
 }
 
 void ArchiStats::modifyArchiCaptured(int modif_value)
@@ -50,13 +47,6 @@ int ArchiStats::getArchiCapturedInStep(int step)
         return 0;
 
     return step_stats_[step].first;
-}
-
-void ArchiStats::forceRefreshStepCount()
-{
-    for(int step_id : step_stats_.keys()) {
-     emit archiCountInStepChanged(step_id, step_stats_[step_id].second);
-    }
 }
 
 int ArchiStats::getTotalArchiCountInStep(int step)

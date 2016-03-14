@@ -91,9 +91,10 @@ void ArchiList::toogleCapturedState(int index)
    stat_manager_->modifyArchiCaptured(modify_by);
    stat_manager_->modifyMonsterCapturedInStep(archi_cpp.step,modify_by);
 
-
+    // Step role is here to refresh the section data
    emit dataChanged(this->index(index), this->index(index),
-           QVector<int>{CapturedRole});
+           QVector<int>() << StepRole << CapturedRole);
+
 }
 
 QHash<int, QByteArray> ArchiList::roleNames() const
@@ -158,7 +159,6 @@ void ArchiList::loadArchiDatabase(const QString &archi_database_path)
             addArchiToList(archi_object);
         }
 
-        stat_manager_->forceRefreshStepCount();
     } else {
         emit error("Couldn't open " + archi_database_path);
     }
