@@ -2,5 +2,17 @@
     <qresource prefix="/">
         <file alias="main.qml">qml/main.qml</file>
         <file alias="ArchiListView.qml">qml/ArchiListView.qml</file>
+        <file alias="ArchiText.qml">qml/ArchiText.qml</file>
+        <file alias="ArchiMainMenu.qml">qml/ArchiMainMenu.qml</file>
+        <file alias="ArchiSvgImage.qml">qml/ArchiSvgImage.qml</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file alias="filter">icons/ic_list_white_24dp_1x.png</file>
+        <file alias="sort">icons/ic_sort_white_24dp_1x.png</file>
+        <file alias="captured">icons/captured.svg</file>
+        <file alias="not_captured">icons/not_captured.svg</file>
+        <file alias="sort_step">icons/sort_step.svg</file>
+        <file alias="step_only">icons/step_only.svg</file>
+        <file alias="search">icons/search.svg</file>
     </qresource>
 </RCC>

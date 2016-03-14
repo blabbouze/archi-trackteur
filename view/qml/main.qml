@@ -7,6 +7,8 @@ ApplicationWindow {
     id: app
     property bool saved: false
 
+
+
     onClosing: {
         if (!saved) {
             close.accepted = false
@@ -18,7 +20,7 @@ ApplicationWindow {
     width: 1024 ; height: 768
     title: qsTr("ArchiTrackteur")
 
-
+    FontLoader { id: appFont; name: "Segoe UI" }
    Controller {
         id: controller
 
@@ -30,22 +32,15 @@ ApplicationWindow {
    }
 
 
-   Rectangle {
-    id: menuStats
-       width: 100;
-       anchors { top: parent.top; bottom:parent.bottom}
-       color: "black"
-       Text {
-           anchors.centerIn: parent
-           color: "white"
-           text: controller.archiListRaw.archiStats.archiCaptured
-       }
+   ArchiMainMenu {
+       id: menuStats
    }
+
 
   ArchiListView {
        anchors {
            top: parent.top; right: parent.right; bottom:parent.bottom
-           left: menuStats.right
+           left: menuStats.right ; leftMargin: 10
        }
        modelArchi: controller.archiList
    }
