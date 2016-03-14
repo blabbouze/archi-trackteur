@@ -21,10 +21,10 @@ ApplicationWindow {
     title: qsTr("ArchiTrackteur")
 
     FontLoader { id: appFont; name: "Segoe UI" }
+
    Controller {
         id: controller
 
-        onError: errorMessage.text = errorMessage.errorDesc
         onReadyToExit: {
             saved = true;
             app.close();
@@ -37,9 +37,18 @@ ApplicationWindow {
    }
 
 
+   ArchiTopBar {
+       id: topBar
+       anchors {
+           right: parent.right
+           left: menuStats.right ; leftMargin: 1
+       }
+   }
+
   ArchiListView {
        anchors {
-           top: parent.top; right: parent.right; bottom:parent.bottom
+           top: topBar.bottom;  topMargin: 10
+           right: parent.right; bottom:parent.bottom
            left: menuStats.right ; leftMargin: 10
        }
        modelArchi: controller.archiList

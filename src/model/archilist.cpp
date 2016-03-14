@@ -57,6 +57,10 @@ QVariant ArchiList::data(const QModelIndex &index, int role) const
     if (role == StepRole)
         return archi_data.step;
 
+    // Workaround so qml have access to this
+    if (role == ModelIndexRole)
+        return index;
+
     return QVariant();
 }
 
@@ -104,6 +108,8 @@ QHash<int, QByteArray> ArchiList::roleNames() const
     roles[MonsterNameRole] = "monsterName";
     roles[CapturedRole] = "captured";
     roles[StepRole] = "step";
+    roles[ModelIndexRole] = "qModelIndex";
+
     return roles;
 }
 

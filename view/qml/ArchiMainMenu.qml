@@ -6,7 +6,6 @@ Rectangle {
     width: 250;
     anchors { top: parent.top; bottom:parent.bottom}
     color: "#505050"
-// LIST
 
     ListModel {
         id: listModel

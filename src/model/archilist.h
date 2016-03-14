@@ -21,7 +21,8 @@ class ArchiList : public QAbstractListModel
     Q_PROPERTY(ArchiStats* archiStats READ archiStats NOTIFY archiStatsChanged)
 public:
     enum ArchiListRoles {
-        ArchiNameRole = Qt::UserRole + 1,
+        ModelIndexRole = Qt::UserRole + 1,
+        ArchiNameRole,
         MonsterNameRole,
         CapturedRole,
         StepRole,

@@ -16,7 +16,7 @@ Item {
              iconWidth: 26
 
              anchors {
-                 left: parent.left ; leftMargin: 20
+                 left: parent.left ; leftMargin: 5
                  verticalCenter: parent.verticalCenter
              }
 
@@ -72,7 +72,7 @@ Item {
             }
             MouseArea {
                 anchors.fill:parent
-                onClicked: controller.toogleArchiCaptured(index)
+                onClicked: controller.toogleArchiCaptured(qModelIndex.row)
             }
         }
 

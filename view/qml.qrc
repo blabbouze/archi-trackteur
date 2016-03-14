@@ -5,6 +5,7 @@
         <file alias="ArchiText.qml">qml/ArchiText.qml</file>
         <file alias="ArchiMainMenu.qml">qml/ArchiMainMenu.qml</file>
         <file alias="ArchiSvgImage.qml">qml/ArchiSvgImage.qml</file>
+        <file alias="ArchiTopBar.qml">qml/ArchiTopBar.qml</file>
     </qresource>
     <qresource prefix="/icons">
         <file alias="filter">icons/ic_list_white_24dp_1x.png</file>
@@ -14,5 +15,6 @@
         <file alias="sort_step">icons/sort_step.svg</file>
         <file alias="step_only">icons/step_only.svg</file>
         <file alias="search">icons/search.svg</file>
+        <file alias="overview">icons/overview.svg</file>
     </qresource>
 </RCC>
