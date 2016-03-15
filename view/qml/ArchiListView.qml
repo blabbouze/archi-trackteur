@@ -5,6 +5,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls.Styles 1.4
 
 Item {
+    id: root
     property alias modelArchi: listView.model
     property bool showSectionOnly: false
 
@@ -57,10 +58,12 @@ Item {
         anchors { top: searchBarComponent.bottom ; bottom: parent.bottom }
         clip: true
 
-        spacing: 5
-        delegate: Rectangle {
+        spacing: root.showSectionOnly ? 0 : 5
+        delegate:
+            Rectangle {
             id: rootDelegate
-            color: captured ? "#0064E6" : "#B4B4B4"
+            color: "#B4B4B4"
+            Behavior on color {ColorAnimation {duration: 100}}
             width: listView.width ; height: 30
             ArchiText {
                 id: text
@@ -83,22 +86,41 @@ Item {
                 font.pointSize: 12
             }
             MouseArea {
+                id: mouseArea
+                property bool hovered: false
                 anchors.fill:parent
                 onClicked: controller.toogleArchiCaptured(qModelIndex.row)
+                onEntered: hovered = true
+                onExited: hovered = false
+                hoverEnabled: true
             }
 
-            state: State {
-                when: listView.showSectionOnly
-                PropertyChanges {
-                    target: rootDelegate
-                    height: 0
+            states: [
+                State {
+                    when: root.showSectionOnly
+                    PropertyChanges {
+                        target: rootDelegate
+                        height: 0
+                        opacity: 0
+                    }
+                },
+                State {
+                    when : captured || mouseArea.hovered
+                    PropertyChanges {
+                        target: rootDelegate
+                        color:"#0064E6"
+                    }
                 }
+            ]
+
+            transitions: Transition {
+                PropertyAnimation {properties: "height,opacity" ; duration: 100}
             }
         }
 
         section.property:  "step"
         section.delegate: Item {
-            height: sectionRoot.height +10 ; width: parent.width
+            height: sectionRoot.height +15 ; width: parent.width
             Rectangle {
                 id: sectionRoot
                 // Those vars are refreshed when the model emits that StepRole have changed
@@ -108,15 +130,18 @@ Item {
                 width: parent.width; height: 20
                 color: "#505050"
 
+                anchors.verticalCenter: parent.verticalCenter
+
                 Rectangle {
                     id: progress
                     // Do not use properties for sectionRoot.captured/sectionRoot.total
                     // It causes refresh problems
-                    anchors { top: parent.top ; left: parent.left}
+                    anchors {top:parent.top; left: parent.left}
                     height: parent.height
                     width : parent.width * sectionRoot.captured/sectionRoot.total
                     color: getProgressColor( sectionRoot.captured/sectionRoot.total)
-
+                     Behavior on color {ColorAnimation {duration: 200}}
+                     Behavior on width {NumberAnimation {duration: 200}}
                 }
 
                 ArchiSvgImage {

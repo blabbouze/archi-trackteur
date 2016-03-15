@@ -17,6 +17,35 @@ Rectangle {
 
     ListView {
         id: listView
+
+        property int currentFilter: -1
+        property int currentSort: -1
+
+        onCurrentFilterChanged: {
+            archiListView.showSectionOnly = false
+            controller.archiList.resetCapturedFilters()
+            switch(currentFilter) {
+            case 0:
+                controller.archiList.showNotCapturedOnly();
+                break;
+            case 1:
+                controller.archiList.showCapturedOnly();
+                break;
+            case 2:
+                archiListView.showSectionOnly = true
+                break;
+            }
+        }
+
+        onCurrentSortChanged: {
+            controller.archiList.resetSortFilters()
+            switch(currentSort) {
+            case 3:
+                controller.archiList.sortByStepProgress();
+                break;
+            }
+        }
+
         anchors { fill:parent ; margins: 15}
 
         model: listModel
@@ -48,14 +77,32 @@ Rectangle {
             }
 
             MouseArea {
+
                 anchors.fill: parent
                 hoverEnabled: true
                 onEntered: rootDelegate.hovered = true
                 onExited: rootDelegate.hovered = false
+                onClicked: {
+                    if (index < 3) {
+                        if (listView.currentFilter  == index)  {
+                            listView.currentFilter  = -1
+                            rootDelegate.hovered = false
+                        } else {
+                            listView.currentFilter  = index
+                        }
+                    } else {
+                        if (listView.currentSort  == index)  {
+                            listView.currentSort  = -1
+                            rootDelegate.hovered = false
+                        } else {
+                            listView.currentSort  = index
+                        }
+                    }
+                }
             }
 
             states: State {
-                when: hovered
+                when: hovered || listView.currentFilter == index || listView.currentSort == index
                 PropertyChanges {
                     target: rootDelegate
                     color: "#b4b4b4"
@@ -87,12 +134,5 @@ Rectangle {
 
     }
 
-
-
-//       Text {
-//           anchors.centerIn: parent
-//           color: "white"
-//           text: controller.archiListRaw.archiStats.archiCaptured
-//       }
 }
 

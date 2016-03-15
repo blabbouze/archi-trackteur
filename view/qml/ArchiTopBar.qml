@@ -40,6 +40,9 @@ Rectangle {
             height: parent.height;
             width: parent.width * text.archiCaptured / text.archiCount
             color: getProgressColor(text.archiCaptured / text.archiCount)
+
+            Behavior on color {ColorAnimation {duration: 200}}
+            Behavior on width {NumberAnimation {duration: 200}}
         }
     }
 }
