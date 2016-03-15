@@ -6,6 +6,7 @@ import QtQuick.Controls.Styles 1.4
 
 Item {
     property alias modelArchi: listView.model
+    property bool showSectionOnly: false
 
     Item {
         id: searchBarComponent
@@ -58,13 +59,24 @@ Item {
 
         spacing: 5
         delegate: Rectangle {
+            id: rootDelegate
             color: captured ? "#0064E6" : "#B4B4B4"
-            width: text.implicitWidth + 20 ; height: 30
+            width: listView.width ; height: 30
             ArchiText {
                 id: text
-                text: archiName + " (" + monsterName + ")"
+                text: archiName
                 anchors {
                     left: parent.left ; leftMargin: 10
+                    verticalCenter: parent.verticalCenter
+                }
+                color: "white"
+                font.pointSize: 12
+            }
+            ArchiText {
+                id: text2
+                text: monsterName
+                anchors {
+                    right: parent.right ; rightMargin: 10
                     verticalCenter: parent.verticalCenter
                 }
                 color: "white"
@@ -73,6 +85,14 @@ Item {
             MouseArea {
                 anchors.fill:parent
                 onClicked: controller.toogleArchiCaptured(qModelIndex.row)
+            }
+
+            state: State {
+                when: listView.showSectionOnly
+                PropertyChanges {
+                    target: rootDelegate
+                    height: 0
+                }
             }
         }
 
@@ -85,24 +105,7 @@ Item {
                 property int captured: controller.archiListRaw.archiStats.getArchiCapturedInStep(section)
                 property int total: controller.archiListRaw.archiStats.getTotalArchiCountInStep(section)
 
-                function getColor(progress) {
-                    var color = ""
-                    if (progress <= 0.2) {
-                        color = "#FF5050"
-                    } else if (progress > 0.2 && progress < 0.5) {
-                        color =  "#ff6400"
-                    } else if (progress >= 0.5 && progress < 0.85) {
-                        color = "#ffb400"
-                    } else if (progress >= 0.85 && progress < 1) {
-                        color = "#00CD78"
-                    } else {
-                        color = "#00BEE6"
-                    }
-
-                    return color;
-                }
-
-                width: parent.width - 10 ; height: 20
+                width: parent.width; height: 20
                 color: "#505050"
 
                 Rectangle {
@@ -112,7 +115,7 @@ Item {
                     anchors { top: parent.top ; left: parent.left}
                     height: parent.height
                     width : parent.width * sectionRoot.captured/sectionRoot.total
-                    color: sectionRoot.getColor( sectionRoot.captured/sectionRoot.total)
+                    color: getProgressColor( sectionRoot.captured/sectionRoot.total)
 
                 }
 

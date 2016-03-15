@@ -164,7 +164,7 @@ void ArchiList::loadArchiDatabase(const QString &archi_database_path)
             archi_object  = archi_data.toObject();
             addArchiToList(archi_object);
         }
-
+        stat_manager_->setArchiCount(archi_list_.count());
     } else {
         emit error("Couldn't open " + archi_database_path);
     }

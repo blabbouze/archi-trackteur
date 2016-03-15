@@ -22,6 +22,11 @@ void ArchiStats::increaseTotalArchiCountInStep(int step)
 
 }
 
+void ArchiStats::setArchiCount(int count)
+{
+    total_archi_count_ = count;
+}
+
 void ArchiStats::modifyMonsterCapturedInStep(int step, int modif_value)
 {
     registerStep(step);
@@ -39,6 +44,11 @@ void ArchiStats::modifyArchiCaptured(int modif_value)
 int ArchiStats::getArchiCapturedCount()
 {
     return total_captured_archi_;
+}
+
+int ArchiStats::getArchiCount()
+{
+    return total_archi_count_;
 }
 
 int ArchiStats::getArchiCapturedInStep(int step)
